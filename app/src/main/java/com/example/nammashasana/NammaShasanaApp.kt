@@ -426,6 +426,7 @@ fun DetailsScreen(navController: NavController, inscription: Inscription) {
     }
 }
 
+
 fun getCoordinatesForLocation(loc: String): String {
     val norm = loc.lowercase()
     if (norm.contains("belagavi") || norm.contains("belgaum")) return "15.8497, 74.4977"
@@ -444,8 +445,32 @@ fun getCoordinatesForLocation(loc: String): String {
     if (norm.contains("vijayapura") || norm.contains("bijapur")) return "16.8302, 75.7100"
     if (norm.contains("chikkamagaluru")) return "13.3161, 75.7720"
     if (norm.contains("udupi")) return "13.3409, 74.7421"
+    if (norm.contains("tumakuru") || norm.contains("tumkur")) return "13.3392, 77.1016"
+    if (norm.contains("mandya")) return "12.5218, 76.8951"
+    if (norm.contains("chitradurga")) return "14.2251, 76.3980"
+    if (norm.contains("koppal")) return "15.3468, 76.1557"
+    if (norm.contains("bidar")) return "17.9104, 77.5199"
+    if (norm.contains("gadag")) return "15.4285, 75.6322"
+    if (norm.contains("haveri")) return "14.7951, 75.4011"
+    if (norm.contains("kodagu") || norm.contains("madikeri") || norm.contains("coorg")) return "12.4244, 75.7382"
+    if (norm.contains("bagalkote") || norm.contains("bagalkot")) return "16.1817, 75.6958"
+    if (norm.contains("yadgir") || norm.contains("yadgiri")) return "16.7645, 77.1352"
+    if (norm.contains("ramanagara")) return "12.7150, 77.2812"
+    if (norm.contains("kolar")) return "13.1367, 78.1292"
+    if (norm.contains("chikkaballapura")) return "13.4325, 77.7274"
+    if (norm.contains("chamarajanagara")) return "11.9261, 76.9406"
+    if (norm.contains("karwar") || norm.contains("uttara kannada")) return "14.8052, 74.1306"
+    if (norm.contains("aihole")) return "16.0189, 75.8828"
+    if (norm.contains("pattadakal")) return "15.9490, 75.8164"
+    if (norm.contains("sravanabelagola") || norm.contains("shravanabelagola")) return "12.8580, 76.4855"
+    if (norm.contains("halmidi")) return "13.1500, 75.9833"
+    if (norm.contains("talakadu")) return "12.1932, 77.0270"
+    if (norm.contains("basavakalyan")) return "17.8687, 76.9536"
+    if (norm.contains("banavasi")) return "14.5385, 75.0135"
+    if (norm.contains("melukote")) return "12.6644, 76.6436"
     return "${15.0 + Math.random() * 2 - 1}, ${76.0 + Math.random() * 2 - 1}"
 }
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
