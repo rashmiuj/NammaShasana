@@ -5,7 +5,7 @@ import org.json.JSONArray
 import org.json.JSONObject
 
 object AppStorage {
-    private const val PREFS = "NammaPrefs_v3"
+    private const val PREFS = "NammaPrefs_v4"
 
     fun getInscriptions(context: Context): List<Inscription> {
         val prefs = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
